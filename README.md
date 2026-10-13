@@ -22,8 +22,7 @@ Sensor data is packaged into JSON format and published via MQTT:
   "current_amps": 1.25,
   "status": "nominal"
 }
-
----
+```
 
 ### Step 3: Core C++ Firmware Template (`src/main.cpp`)
 Here is a clean, structured skeleton of the C++ code you can put inside repository's `src/main.cpp` file. It sets up the Wi-Fi connection, initializes the I2C bus for the MPU6050, reads analog current, and builds the structure for telemetry:
@@ -72,3 +71,4 @@ void loop() {
 
   delay(1000); // 1-second telemetry sampling interval
 }
+```
